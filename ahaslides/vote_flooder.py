@@ -58,8 +58,7 @@ elif choice == 2:
     for i in range(20,0,-1):
         if int(number_of_unvotes)%i == 0:
             num_loops = int(int(number_of_unvotes)/i)
-            print(
-            f'\nStarting {i} Threads using {num_loops} loops. \nUnvoting [{list_options["rows"][int(action_for) - 1]["title"]}] with id {option_id}, already having {list_options["rows"][int(action_for) - 1]["votesCount"]} votes.')
+            print(f'\nStarting {i} Threads using {num_loops} loops. \nUnvoting [{list_options["rows"][int(action_for) - 1]["title"]}] with id {option_id}, already having {list_options["rows"][int(action_for) - 1]["votesCount"]} votes.')
             start_threads(i)
             break
         else:
